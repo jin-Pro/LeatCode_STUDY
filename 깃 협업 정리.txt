@@ -1,0 +1,44 @@
+git config --global user.name ""
+git config --global user.email ""
+
+
+1. git bash로 바탕화면 이동
+git bash의 위치가 바탕화면일때 여기서
+
+2. git clone https://github.com/jin-Pro/LeatCode_STUDY.git
+>> cd LeatCode_STUDY
+
+3. git checkout -b 닉네임
+ex) git checkout -b 영진
+
+4. 파일 생성은 vim test.txt  >> test.txt라는 파일을 생성한다
+
+a를 누르면 입력가능
+입력후 esc누르고 :wq누르면 저장
+
+5. git add 파일제목 >> 파일제목을 올리기위한 준비
+ex) git add 두 숫자 더하기
+
+6. git commit -m "{날짜} {작성자이름} {문제이름}" 
+ex) git commit -m "2021-02-10 영진 두 숫자 더하기"
+
+7. git push origin 닉네임 >> 저장한것을 깃허브에 올리겠다
+ex) git push origin 영진
+
+--------------------------------------
+
+리눅스 명령어
+
+cd : 폴더 확인 (= 폴더 이동)
+vi : 파일 확인 (= 파일이동)
+pwd : 현재 위치확인
+ls : 현재 위치에 안에 있는 폴더 및 파일 이름 확인
+ls -la : 현재 위치에 있는 폴더 및 파일 세부내용 확인
+exit 입력하면 종료됨
+
+파일 생성 및 수정하기 위해서는 a를 눌러야 입력모드 전환
+입력이 끝나면 ESC
+:wq 저장하고 나가기
+:q 그냥 나가기
+:q! 저장안하고 나가기 
+-----------------------------------------------
