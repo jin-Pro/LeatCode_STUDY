@@ -1,0 +1,12 @@
+No_136_Single Number
+
+이 문제를 보고 처음으로 한 생각은
+
+카운팅 정렬 처럼
+nums의 원소 하나하나 배열에 넣어서 copy[i]가 1인값을 꺼내오면 되지않을까?? 
+하지만 nums[i]의 범위는 -3 * 10^4 ~ 3 * 10^4 이기 때문에 메모리 사용이 엄청날것같다.
+
+Runtime: 1 ms, faster than 96.29% 
+Memory Usage: 38.9 MB, less than 88.13% 
+
+생각보다 성능이 좋았다..
