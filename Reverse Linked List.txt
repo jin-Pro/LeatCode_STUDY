@@ -1,0 +1,20 @@
+using namespace std;
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode*result=head;
+        ListNode*a=result;
+        list<int> it;
+        while(head!=NULL){
+            it.push_front(head->val);
+            head=head->next;
+        }
+        while(!it.empty()){
+            result->val=it.front();
+            it.pop_front();
+            result=result->next;
+        }
+        result=NULL;
+        return a;
+    }
+};
