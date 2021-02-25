@@ -1,0 +1,29 @@
+//d.next를 사용하는 이유는 계속 리스트를 이어가기 위함.
+class Solution {
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode d=new ListNode();
+        ListNode a=d;
+        while(l1!=null||l2!=null){
+            if(l1==null){
+                d.next=l2;
+                break;
+            }
+            else if(l2==null){
+                d.next=l1;
+                break;
+            }
+            else if (l1.val<l2.val){
+              d.next=l1;
+               d=d.next;
+              l1=l1.next;
+              }
+            else{
+                d.next=l2;
+                d=d.next;
+                l2=l2.next;
+            }
+          
+        }
+         return a.next;
+        }
+}
