@@ -8,6 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+이거 왜 안올라가지;;
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode sum=new ListNode();
