@@ -24,7 +24,7 @@ public class numof101_isSymmetric {
 	 boolean tree(TreeNode left,TreeNode right) {
 		 boolean a,b;
 		 if(left==null & right==null) return true;//무사히 끝났을때 true반환
-		 if(left=null || right==null) return false;//둘중값이 없는경우
+		 if(left==null || right==null) return false;//둘중값이 없는경우
 		 if(left.val!=right.val) return false; //값이 다른경우
 		 a=tree(left.left,right.right);
 		 b=tree(left.right,right.left);
