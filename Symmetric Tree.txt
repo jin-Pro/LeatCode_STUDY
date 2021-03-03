@@ -1,0 +1,60 @@
+class Solution {
+int i;
+int arr1[1000]={0,};
+int arr2[1000]={0,};
+int m;
+int count=0;
+public:
+    int*checkL(TreeNode*root,int arr[]){
+        if(root->left!=NULL)
+        {
+            m++;
+            checkL(root->left,arr);
+        }
+        arr[i]=root->val+m;
+        i++;
+        m++;
+        count++;
+        if(root->right!=NULL)
+        {
+            m++;
+            checkL(root->right,arr);
+        }
+        return arr;
+    }
+    int* checkR(TreeNode*root,int arr[]){
+          if(root->right!=NULL)
+        {
+           m++;
+              checkR(root->right,arr);
+        }
+        arr[i]=root->val+m;
+        m++;
+        i++;
+        if(root->left!=NULL)
+        {
+            m++;
+            checkR(root->left,arr);
+        }
+        return arr;
+    }
+    
+    bool isSymmetric(TreeNode* root) {
+        int arr1[1000];
+        int arr2[1000];
+        if(root==NULL){
+            return true;
+        }
+        i=0,m=0;
+        checkL(root,arr1);
+        i=0,m=0;
+        checkR(root,arr2);
+        for(int i=0;i<count;i++)
+        {
+            if(arr1[i]!=arr2[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+};
